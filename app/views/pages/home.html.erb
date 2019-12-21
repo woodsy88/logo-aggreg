@@ -1,1 +1,4 @@
 <%= react_component 'Home' %>
+
+
+  <%= link_to 'New Board', new_board_path if user_signed_in?  %>

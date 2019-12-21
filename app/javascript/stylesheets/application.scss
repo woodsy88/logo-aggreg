@@ -1,3 +1,25 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+.btn-success {
+  @apply bg-blue-500 bg-blue-700 text-white font-bold py-2 px-4 rounded;
+}
+
+.btn-success:hover {
+  @apply bg-indigo-400;
+}
+
+.btn-success:focus {
+  @apply outline-none shadow-outline;
+}
+
+.btn-success:active {
+  @apply bg-indigo-600;
+}
+
+@screen sm {
+  .btn-success {
+    @apply text-base;
+  }
+}
