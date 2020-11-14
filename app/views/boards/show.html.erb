@@ -1,6 +1,7 @@
 
-  <%= @board.name %> this is board
-
+  <h2 class="text-xl font-bold"><%= @board.name %></h2>
+  <div class="flex mb-4">
 <% @board.sections.each do |section| %>
   <%= section.title %>
 <% end %>
+</div>
