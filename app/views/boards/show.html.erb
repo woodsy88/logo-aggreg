@@ -1,2 +1,6 @@
 
-  <%= @board.name %>
+  <%= @board.name %> this is board
+
+<% @board.sections.each do |section| %>
+  <%= section.title %>
+<% end %>
